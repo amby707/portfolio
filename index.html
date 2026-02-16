@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.6">
+        <title>Portfolio</title>
+        <!--Font Awesome iconos -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- Ambar Logo -->
+            <h1 class="logo">
+                 <img src="logo.png" alt="logo">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social">Social</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <div class="about-content">
+                <img src="img.png" alt="avatar" class="avatar">
+                <div class="bio">
+                <p>
+                    I am currently studying multiplatform software development and 
+                    continue to strengthen my skills through practice and academic projects. 
+                    What motivates me most is seeing how an idea can be transformed into 
+                    something functional through effort and dedication.
+                </p>
+                <p>
+                    Over time I have learned that progress requires patience and perseverance, 
+                    and I challenge myself to continue improving with each project I do.
+                </p>
+                <p>
+                    My goal is to continue learning, gain experience and develop the 
+                    skills necessary to become a capable and reliable professional.
+                </p>
+                </div>
+                </div>
+            </section>
+            <section id="projects" class="my-projects">
+                <h2>Welcome to my portfolio!</h2>
+                <!--dividir en dos columnas, una para habilidades y otra para proyectos-->
+                <div class="sp">
+                    <!-- Habilidades -->
+                    <div class="left">
+                        <div class="skills">
+                        <h3>Skills</h3>
+                        <p>Continue learning:</p>
+                        <ul>
+                            <li>Python</li>
+                            <li>Kotlin</li>
+                            <li>HTML/CSS</li>
+                            <li>C++</li>
+                         </ul>
+                        </div>
+                    </div>
+                    <!-- Proyectos -->
+                    <div class="right">
+                        <div class="project">
+                            <h3>Cherry SA</h3>
+                            <p>Development of a mobile application focused on monitoring
+                                the health of older adults, capable of visualizing vital signs,
+                                analyzing data with artificial intelligence and generating alerts
+                                to support the early detection of risks.</p>
+                        </div>
+                        <div class="project">
+                            <h3>Project 2</h3>
+                            <p>a</p>
+                        </div>
+                        <div class="project">
+                            <h3>Project 3</h3>
+                            <p>A</p>
+                        </div>
+                        </div>
+                 </div>
+            </section>
+            <section id="contact" class="contact">
+                <!-- Partículas de fondo para la sección de contacto -->
+                <div id="particles-contact"></div>
+                <h2>Contact Me</h2>
+                <div class="contact-card">
+                    <p>Email:</p>
+                    <a href="mailto:ambar.alvarez.itid@unipolidgo.edu.mx">
+                        ambar.alvarez.itid@unipolidgo.edu.mx
+                    </a>
+                    <p>Phone:</p>
+                    <a href="tel:+52 618 332 5965">
+                        +52 618 332 5965
+                    </a>
+                </div>
+            </section>
+            <section id="social" class="social">
+                <!-- Partículas de fondo para la sección de redes sociales -->
+                <div id="particles-js"></div>
+                <h2>Follow Me</h2>
+                 <div class="social-card">
+                    <p>
+                        GitHub:
+                        <a href="https://github.com/amby707" target="_blank">
+                            amby707
+                            <!-- Icono de GitHub -->
+                            <i class="fab fa-github"></i>
+                         </a>
+                     </p>
+
+                    <p>
+                        Instagram:
+                         <a href="https://www.instagram.com/amby._707/" target="_blank">
+                            @amby._707
+                            <!-- Icono de Instagram -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </p>
+                </div>
+            </section>
+           
+        </main>
+        <footer>
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+            <a href="#about">About </a>
+            <a href="#contact">Contact</a>
+        </footer>
+        <!-- Partículas de fondo para la sección de contacto y redes sociales -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80 },
+                size: { value: 3 },
+                move: { speed: 1 },
+                line_linked: { enable: false },
+                color: { value: "#ffffff" }
+                }
+                });
+        </script>
+            <script>
+        particlesJS("particles-contact", {
+            particles: {
+                number: { value: 80 },
+                size: { value: 3 },
+                move: { speed: 1 },
+                line_linked: { enable: false },
+                color: { value: "#ffffff" }
+                }
+                });
+        </script>
+    </body>
+</html>
