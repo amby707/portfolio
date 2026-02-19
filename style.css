@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 html,body{
     font-size: 16px;
@@ -12,6 +13,24 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+header a,footer a{
+    text-decoration: none;
+    color: #cb88f1;
+}
+header a:hover,footer a:hover{
+    color: #762db3;
+    transition: 0.3s ease;
+}
+a:visited{
+    color: #cb88f1;
+}
+a:active{
+    transform: scale(0.95);
+}
+a:focus{
+    outline: 1.5px solid #cb88f1;
+    outline-offset: 3px;
 }
 img{
     width: 110px;
@@ -46,6 +65,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    color: #ffffff80;
 }
 .about{
     background-color: #9d4edd;
@@ -72,14 +92,14 @@ footer{
 }
 .about h2{
     color: #400763;
-    text-align: left;
-    margin-left: 1rem;
+    text-align: center;
 }
 .about-content{
     display: flex;
     align-items: center;
     gap: 40px;
     margin: auto;
+    margin-top: 2rem;
     max-width: 1150px;
 }
 .bio{
@@ -95,18 +115,13 @@ footer{
 }
 .my-projects h2{
     color: #5F1B8A;
-    text-align: left;
+    text-align: center;
     margin-left: 1rem;
 }
 .contact h2{
     color: #5F1B8A;
     text-align: left;
-    margin-left: 1rem;
-}
-.social h2{
-    color:#5F1B8A;
-    text-align: left;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 .project{
     background-color: #352541;
@@ -142,15 +157,6 @@ footer{
     height: 40px;
     width: 150px;
 }
-.social{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 200px;
-}
 #particles-js{
     position: absolute;
     top: 0;
@@ -164,7 +170,7 @@ footer{
     z-index: 1;
 }
 .social-card{
-    background: #5e2985;
+    background: #5f2985cb;
     padding: 30px 60px;
     border-radius: 20px;
     backdrop-filter: blur(20px);
@@ -186,7 +192,7 @@ footer{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    height:300px;
+    height: 450px;
     overflow:hidden;
 }
 #particles-contact{
@@ -202,8 +208,8 @@ footer{
     z-index:1;
 }
 .contact-card{
-    background:#5e2985;
-    padding:20px 70px;
+    background:#5e2985cb;
+    padding:10px 40px;
     border-radius:20px;
     backdrop-filter:blur(20px);
     box-shadow:0 8px 30px rgba(0,0,0,0.3);
